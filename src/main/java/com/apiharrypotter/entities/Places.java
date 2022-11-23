@@ -1,4 +1,4 @@
-package com.harrypotter.apirest.entities;
+package com.apiharrypotter.entities;
 
 import javax.persistence.*;
 
