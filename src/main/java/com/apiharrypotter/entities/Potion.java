@@ -3,7 +3,7 @@ package com.apiharrypotter.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Potion")
+@Table(name = "potion")
 public class Potion {
 
     @Id
@@ -13,7 +13,7 @@ public class Potion {
     private String ingredients;
     private String effects;
     private String characteristics;
-    @Column(name = "Difficulty level")
+    @Column(name = "difficulty_level")
     private String level;
 
     public Potion() {}

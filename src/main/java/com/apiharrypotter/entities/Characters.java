@@ -3,13 +3,12 @@ package com.apiharrypotter.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "person_characters")
-public class Character {
+@Table(name = "characters")
+public class Characters {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "person_name")
     private String name;
     private String gender;
     private String job;
@@ -28,9 +27,9 @@ public class Character {
     private String birth;
     private String death;
 
-    public Character() {}
+    public Characters() {}
 
-    public Character(Long id, String name, String gender, String job, String house, String patronus, String species, String blood_status, String hair_colour, String eye_colour, String loyalty, String skills, String birth, String death) {
+    public Characters(Long id, String name, String gender, String job, String house, String patronus, String species, String blood_status, String hair_colour, String eye_colour, String loyalty, String skills, String birth, String death) {
         this.id = id;
         this.name = name;
         this.gender = gender;

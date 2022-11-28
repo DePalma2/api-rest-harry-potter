@@ -3,7 +3,7 @@ package com.apiharrypotter.entities;;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Spells")
+@Table(name = "spell")
 public class Spell {
 
     @Id

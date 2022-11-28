@@ -3,25 +3,25 @@ package com.apiharrypotter.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Houses")
+@Table(name = "house")
 public class House {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "House name")
+    @Column(name = "house_name")
     private String name;
-    @Column(name = "Creator name")
+    @Column(name = "founder_name")
     private String founder;
-    @Column(name = "House Colour")
+    @Column(name = "house_colour")
     private String colour;
-    @Column(name = "House Traits")
+    @Column(name = "house_traits")
     private String traits;
-    @Column(name = "House Common Room")
+    @Column(name = "common_room")
     private String commonRoom;
-    @Column(name = "Image House")
+    @Column(name = "house_image")
     private String img;
-    @Column(name = "House Animal")
+    @Column(name = "house_animal")
     private String animal;
 
     public House() {}

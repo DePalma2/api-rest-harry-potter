@@ -3,13 +3,13 @@ package com.apiharrypotter.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Chapter")
+@Table(name = "chapter")
 public class Chapter {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "Chapter Name")
+    @Column(name = "chapter_name")
     private String name;
 
     public Chapter() {}

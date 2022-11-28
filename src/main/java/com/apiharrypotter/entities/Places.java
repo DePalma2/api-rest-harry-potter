@@ -3,15 +3,15 @@ package com.apiharrypotter.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Places")
+@Table(name = "place")
 public class Places {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "Place Name")
+    @Column(name = "place_name")
     private String name;
-    @Column(name = "Place Category")
+    @Column(name = "place_category")
     private String category;
 
     public Places() {}

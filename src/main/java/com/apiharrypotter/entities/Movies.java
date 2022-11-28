@@ -3,17 +3,17 @@ package com.apiharrypotter.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Movies")
+@Table(name = "movie")
 public class Movies {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "Movie Title")
+    @Column(name = "movie_title")
     private String title;
-    @Column(name = "Release Year")
+    @Column(name = "release_year")
     private Integer releaseYear;
-    @Column(name = "Movie Time")
+    @Column(name = "time_movie")
     private Integer runtime;
     private String budget;
     private String boxOffice;
