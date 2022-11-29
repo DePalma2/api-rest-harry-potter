@@ -7,10 +7,10 @@ import java.util.Optional;
 
 public interface ChapterService {
 
-    public abstract List<Chapter> getAllChapter();
-    public abstract Optional<Chapter> getChapterById(Long id);
-    public abstract Chapter addChapter(Chapter chapter);
-    public abstract Chapter updateChapter(Long id, Chapter chapter);
-    public abstract boolean removeChapter(Chapter chapter);
+    public  List<Chapter> getAllChapter();
+    public  Optional<Chapter> getChapterById(Long id);
+    public  Chapter addChapter(Chapter chapter);
+    public  Chapter updateChapter(Long id, Chapter chapter);
+    public  boolean removeChapter(Chapter chapter);
 
 }

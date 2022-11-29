@@ -10,7 +10,7 @@ import java.util.Optional;
 @Service
 public class ChapterServiceImpl implements ChapterService {
 
-    private ChapterRepository chapterRepository;
+    private final ChapterRepository chapterRepository;
 
     public ChapterServiceImpl(ChapterRepository chapterRepository) {
         this.chapterRepository = chapterRepository;
