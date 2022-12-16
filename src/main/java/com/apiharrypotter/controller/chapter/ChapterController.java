@@ -25,12 +25,13 @@ public class ChapterController {
         return chapterService.getChapterById(id);
     }
 
-    @PostMapping("/chapters")
+    @PostMapping("/chapters/add")
     public Chapter addChapter(@RequestBody Chapter chapter) {
-        return chapterService.addChapter(chapter);
+        chapterService.addChapter(chapter);
+        return chapter;
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/chapters/{id}/delete")
     public String deleteChapter(@PathVariable(name = "id") Chapter id) {
         boolean ok = chapterService.removeChapter(id);
         if(ok){
