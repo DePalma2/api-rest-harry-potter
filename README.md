@@ -100,7 +100,7 @@ In the event that there is an issue, please use the template that is created.
 
 ## Authors
 
-- [@Lucas De Palma](https://github.com/DePalma2)
+[@Lucas De Palma](https://github.com/DePalma2)
 
 ## License
 
