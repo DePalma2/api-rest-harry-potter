@@ -92,7 +92,7 @@ This project seeks to be the best rest api related to the magical world of Harry
 | `/spells` | `GET` | **Spells**. Return list all spells|
 | `/spells/{id}` | `GET` | **Spells**. Return a spell by id
 
-## Support
+## Contributing
 
 Any user can contribute and leave their ideas to improve this wonderful project.
 
