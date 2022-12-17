@@ -90,3 +90,9 @@ This project seeks to be the best rest api related to the magical world of Harry
 | :-------- | :------- | :------------------------- |
 | `/spells` | `GET` | **Spells**. Return list all spells|
 | `/spells/{id}` | `GET` | **Spells**. Return a spell by id
+
+
+
+## Authors
+
+- [@Lucas De Palma](https://github.com/DePalma2)
