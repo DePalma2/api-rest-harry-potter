@@ -6,9 +6,10 @@ This project seeks to be the best rest api related to the magical world of Harry
 
 
 
-## Documentation languages
+## Documentation languages 📖
 
- - [Spanish](#) (Working Only in English)
+ - 🇪🇸 [Spanish](#) (Working Only in English)
+ - 🇪n [English](https://github.com/DePalma2/api-rest-harry-potter/blob/main/README.md) 
 
 
 
