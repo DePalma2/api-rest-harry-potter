@@ -1,5 +1,5 @@
 
-# Harry Potter API REST (Working)
+# 🧙‍♂️ Harry Potter API REST 🧙‍♂️ (Working)
 
 This project seeks to be the best rest api related to the magical world of Harry Potter. In it you will find a diversity of information to be able to consume and use in your applications.
 
