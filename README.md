@@ -94,6 +94,6 @@ This project seeks to be the best rest api related to the magical world of Harry
 
 
 
-## Authors
+## Authors 🙋‍♂️
 
 - [@Lucas De Palma](https://github.com/DePalma2)
