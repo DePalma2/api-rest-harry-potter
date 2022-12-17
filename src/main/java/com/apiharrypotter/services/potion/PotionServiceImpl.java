@@ -19,7 +19,7 @@ public class PotionServiceImpl implements PotionService{
 
 
     @Override
-    public List<Potion> getAllPotions(Potion potion) {
+    public List<Potion> getAllPotions() {
         return potionRepository.findAll();
     }
 
