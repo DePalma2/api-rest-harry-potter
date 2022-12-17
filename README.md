@@ -8,7 +8,7 @@ This project seeks to be the best rest api related to the magical world of Harry
 
 ## Documentation languages
 
- - [Spanish](#)
+ - [Spanish](#) (Working Only in English)
 
 
 
