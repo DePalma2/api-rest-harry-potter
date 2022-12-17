@@ -15,6 +15,8 @@ This project seeks to be the best rest api related to the magical world of Harry
 
 ## API Reference
 
+The api has the swagger documentation system integrated, therefore you can enter the page and see all the endpoints that can be consumed, however, the ones that are available are detailed below
+
 #### Chapters
 
 ```http
