@@ -35,7 +35,7 @@ public class PotionController {
 
     @PostMapping("/add/potions")
     @ResponseStatus(HttpStatus.CREATED)
-    @ApiOperation(value = "Create a potion")
+    @ApiOperation(value = "Create a potion", hidden = true)
     public Potion addPotions(@RequestBody  Potion potion) {
         potionService.addPotion(potion);
         return potion;
@@ -43,7 +43,7 @@ public class PotionController {
 
     @DeleteMapping("/delete/potions/{id}")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Delete a potion", notes = "Potion must exist")
+    @ApiOperation(value = "Delete a potion", notes = "Potion must exist", hidden = true)
     public String deletePotions(@PathVariable(name = "id") Potion id) {
         boolean ok = potionService.deletePotion(id);
         if(ok){

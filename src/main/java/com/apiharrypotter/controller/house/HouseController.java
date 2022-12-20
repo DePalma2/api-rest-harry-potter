@@ -35,7 +35,7 @@ public class HouseController {
 
     @PostMapping("/add/houses")
     @ResponseStatus(HttpStatus.CREATED)
-    @ApiOperation(value = "Create a house")
+    @ApiOperation(value = "Create a house", hidden = true)
     public House addHouse(@RequestBody  House house){
         houseService.addHouse(house);
         return house;
@@ -43,7 +43,7 @@ public class HouseController {
 
     @DeleteMapping("/delete/houses/{id}")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Delete a house")
+    @ApiOperation(value = "Delete a house", hidden = true)
     public String deleteHouse(@PathVariable(name = "id") House id){
         boolean ok = houseService.deleteHouse(id);
         if(ok){

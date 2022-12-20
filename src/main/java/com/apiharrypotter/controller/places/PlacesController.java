@@ -35,7 +35,7 @@ public class PlacesController {
 
     @PostMapping("/add/places")
     @ResponseStatus(HttpStatus.CREATED)
-    @ApiOperation(value = "Create a place")
+    @ApiOperation(value = "Create a place", hidden = true)
     public Places addPlaces(@RequestBody Places places) {
         placeService.addPlace(places);
         return places;
@@ -43,7 +43,7 @@ public class PlacesController {
 
     @DeleteMapping("/delete/places/{id}")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Delete a place", notes = "Place must exist")
+    @ApiOperation(value = "Delete a place", notes = "Place must exist", hidden = true)
     public String deletePlaceById(@PathVariable(name = "id") Places id) {
         boolean ok = placeService.deletePlace(id);
         if(ok){

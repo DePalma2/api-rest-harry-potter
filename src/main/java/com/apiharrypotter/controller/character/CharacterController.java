@@ -36,7 +36,7 @@ public class CharacterController {
 
     @PostMapping("/add/characters")
     @ResponseStatus(HttpStatus.CREATED)
-    @ApiOperation(value = "Create a character")
+    @ApiOperation(value = "Create a character", hidden = true)
     public Characters addCharacter(@RequestBody Characters characters) {
         characterService.addCharacters(characters);
         return characters;
@@ -44,7 +44,7 @@ public class CharacterController {
 
     @DeleteMapping("/delete/characters/{id}")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Delete a character")
+    @ApiOperation(value = "Delete a character", hidden = true)
     public String deleteCharacter(@PathVariable(name = "id") Characters id){
         boolean ok = characterService.deleteCharacters(id);
         if(ok){

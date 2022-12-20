@@ -34,7 +34,7 @@ public class MoviesController {
     }
 
     @PostMapping("/add/movies")
-    @ApiOperation(value = "Create a movie")
+    @ApiOperation(value = "Create a movie", hidden = true)
     @ResponseStatus(HttpStatus.CREATED)
     public Movies addMovies(@RequestBody Movies movies) {
         movieService.addMovies(movies);
@@ -42,7 +42,7 @@ public class MoviesController {
     }
 
     @DeleteMapping("/delete/movies/{id}")
-    @ApiOperation(value = "Delete a chapter", notes = "Movie must exist")
+    @ApiOperation(value = "Delete a chapter", notes = "Movie must exist", hidden = true)
     @ResponseStatus(HttpStatus.OK)
     public String deleteMoviesById(@PathVariable(name = "id") Movies id) {
         boolean ok = movieService.deleteMovie(id);

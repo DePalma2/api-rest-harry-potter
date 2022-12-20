@@ -35,7 +35,7 @@ public class ChapterController {
 
 
     @ResponseStatus(HttpStatus.CREATED)
-    @ApiOperation(value = "Create a chapter")
+    @ApiOperation(value = "Create a chapter", hidden = true)
     @PostMapping("/add/chapters")
     public Chapter addChapter(@RequestBody Chapter chapter) {
         chapterService.addChapter(chapter);
@@ -43,7 +43,7 @@ public class ChapterController {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Delete a chapter", notes = "Chapter must exist")
+    @ApiOperation(value = "Delete a chapter", notes = "Chapter must exist", hidden = true)
     @DeleteMapping("/delete/chapters/{id}")
     public String deleteChapter(@PathVariable(name = "id") Chapter id) {
         boolean ok = chapterService.removeChapter(id);

@@ -35,7 +35,7 @@ public class SpellController {
 
     @PostMapping("/add/spells")
     @ResponseStatus(HttpStatus.CREATED)
-    @ApiOperation(value = "Create a spell")
+    @ApiOperation(value = "Create a spell", hidden = true)
     public Spell addSpell(@RequestBody Spell spell) {
         spellService.addSpell(spell);
         return spell;
@@ -43,7 +43,7 @@ public class SpellController {
 
     @DeleteMapping("/delete/spells/{id}")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Delete a spell", notes = "Spell must exist")
+    @ApiOperation(value = "Delete a spell", notes = "Spell must exist", hidden = true)
     public String deleteSpell(@PathVariable(name = "id") Spell id) {
         boolean ok = spellService.deleteSpell(id);
         if(ok){
