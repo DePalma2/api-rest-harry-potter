@@ -10,9 +10,20 @@ This project seeks to be the best rest api related to the magical world of Harry
 
  - [Spanish](#) (Working Only in English) 🇪s
  - [English](https://github.com/DePalma2/api-rest-harry-potter/blob/main/README.md) 🇪n
+ 
+ ## Technologies ⚙
 
-
-
+ - Java [11]
+ - Spring Boot [2.5.5]
+ - JPA
+ - Lombok [1.18.24]
+ - MySQL 
+ - MySQL Connector
+ - Spring Fox [2.9.2]
+ - Swagger 2 [2.9.2]
+ - Spring Security
+ - Maven [4.0.0]
+ 
 ## API Reference
 
 The api has the swagger documentation system integrated, therefore you can enter the page and see all the endpoints that can be consumed, however, the ones that are available are detailed below
