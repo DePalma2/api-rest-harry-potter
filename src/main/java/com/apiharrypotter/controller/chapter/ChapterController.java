@@ -28,7 +28,7 @@ public class ChapterController {
 
     @GetMapping( "/chapters/{id}")
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Returns a chapter with a specific id")
+    @ApiOperation(value = "Returns a chapter with a specific id", notes = "Movie must exist")
     public Optional<Chapter> getChapterById(@PathVariable(name = "id") Long id) {
         return chapterService.getChapterById(id);
     }
@@ -36,15 +36,15 @@ public class ChapterController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @ApiOperation(value = "Create a chapter")
-    @PostMapping("/chapters/add")
+    @PostMapping("/add/chapters")
     public Chapter addChapter(@RequestBody Chapter chapter) {
         chapterService.addChapter(chapter);
         return chapter;
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Delete a chapter")
-    @DeleteMapping("/chapters/{id}/delete")
+    @ApiOperation(value = "Delete a chapter", notes = "Chapter must exist")
+    @DeleteMapping("/delete/chapters/{id}")
     public String deleteChapter(@PathVariable(name = "id") Chapter id) {
         boolean ok = chapterService.removeChapter(id);
         if(ok){
